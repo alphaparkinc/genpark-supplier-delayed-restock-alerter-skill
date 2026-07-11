@@ -1,0 +1,29 @@
+{
+  "name": "genpark-supplier-delayed-restock-alerter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Supply transit milestone latency checker.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "supply-chain",
+    "delay"
+  ],
+  "inputs": {
+    "promised_transit_days": {
+      "type": "integer"
+    },
+    "historical_delays_days": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "estimated_total_delay_days": {
+      "type": "number"
+    },
+    "alert_triggered": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
